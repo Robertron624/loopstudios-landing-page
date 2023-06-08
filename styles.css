@@ -89,6 +89,8 @@ body {
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 55%);
     --very-dark-gray: hsl(0, 0%, 41%);
+
+    --custom-max-width: 1110px;
 }
 
 h3,
@@ -109,6 +111,10 @@ header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .inner nav.desktop-links {
+  display: none;
 }
 
 header .inner > img {
@@ -170,6 +176,10 @@ section.leader .leader-img {
     margin-bottom: 2rem;
 }
 
+section.leader .leader-img img {
+    margin-inline: auto;
+}
+
 section.leader h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -204,6 +214,10 @@ section.our-creations .creations {
 
 .creations .creation {
     position: relative;
+}
+
+.creations .creation img {
+  margin-inline: auto;
 }
 
 .creations .creation .creation-text {
@@ -276,5 +290,80 @@ footer .footer-inner p.copyrigth {
 @media screen and (min-width: 768px) {
     .mobile-hamburger {
         display: none;
+    }
+
+    header {
+        background-image: url(/images/desktop/image-hero.jpg);
+        height: 30rem;
+    }
+
+    header .inner {
+      max-width: var(--custom-max-width);
+      margin-inline: auto;
+    }
+
+    header .inner nav.desktop-links {
+      display: block;
+    }
+
+    header .inner nav.desktop-links ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    header .inner nav.desktop-links ul li a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: .8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    header .hero-text {
+        font-size: 3rem;
+        margin-inline: auto;
+        max-width: var(--custom-max-width);
+        letter-spacing: 10px;
+        border: none;
+        padding: 0;
+        margin-top: 4.5rem;
+    }
+
+    header .hero-text p {
+      max-width: 32rem;
+      border: 2px solid white;
+      line-height: 1;
+      padding: 1.3rem;
+    }
+
+    /* Main section  */
+
+    section.leader {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+      max-width: var(--custom-max-width);
+      margin-inline: auto;
+    }
+
+    section.leader .leader-img {
+      margin-bottom: 0;
+    }
+
+    section.leader .leader-text {
+      width: 80%;
+      height: fit-content;
+      background-color: var(--white);
+      margin-left: -9rem;
+      padding: 4rem 0 4rem 4rem;
+      margin-top: 14rem;
+    }
+
+    section.leader .leader-text p {
+      margin-inline: 0;
+    }
+
+    section.leader .leader-text h1 {
+      max-width:  20rem;
     }
 }
