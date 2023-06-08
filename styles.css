@@ -74,7 +74,8 @@ button {
 }
 
 body {
-    font-family: "Josefin Sans", sans-serif;
+
+    font-family: "Alata", sans-serif;
     margin: 0;
     padding: 0;
 
@@ -91,8 +92,10 @@ body {
     --very-dark-gray: hsl(0, 0%, 41%);
 }
 
+h3,
+h2,
 h1 {
-    font-family: "Alata", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 header {
@@ -122,6 +125,7 @@ header .hero-text {
     font-size: 2rem;
     margin-top: 9.5rem;
     letter-spacing: 5px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .mobile-menu-modal {
@@ -149,6 +153,83 @@ header .hero-text {
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+main {
+    padding: 6rem 1.1rem 0;
+}
+
+section {
+  text-align: center;
+}
+
+section.leader {
+  margin-bottom: 4rem;
+}
+
+section.leader .leader-img {
+  margin-bottom: 2rem;
+}
+
+section.leader h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+section.leader p {
+  font-size: .8rem;
+  color: var(--dark-gray);
+  font-weight: 300;
+  max-width: 76%;
+  margin: 0 auto;
+}
+
+section.our-creations {
+  margin-bottom: 4rem;
+}
+
+section.our-creations h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+section.our-creations .creations {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.creations .creation {
+  position: relative;
+}
+
+.creations .creation .creation-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  max-width: 8rem;
+  text-align: left;
+  padding: 0 0 1rem 1rem;
+}
+
+section.our-creations button.see-all {
+  background-color: transparent;
+  border: 2px solid var(--black);
+  color: var(--black);
+  padding: .5rem 0rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  width: 10rem;
 }
 
 @media screen and (min-width: 768px) {
