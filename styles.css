@@ -53,8 +53,8 @@ select {
 }
 
 button {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -74,7 +74,6 @@ button {
 }
 
 body {
-
     font-family: "Alata", sans-serif;
     margin: 0;
     padding: 0;
@@ -129,30 +128,30 @@ header .hero-text {
 }
 
 .mobile-menu-modal {
-  width: 100%;
-  height: 100vh;
-  padding: 2rem 1.1rem 0;
-  background-color: var(--black);
-  max-width: none;
-  margin: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 1.1rem 0;
+    background-color: var(--black);
+    max-width: none;
+    margin: 0;
 }
 
 .mobile-menu-modal .mobile-menu {
-  margin-top: 8rem;
+    margin-top: 8rem;
 }
 
 .mobile-menu-modal .mobile-menu > ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .mobile-menu-modal .mobile-menu > ul > li > a {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 main {
@@ -160,76 +159,118 @@ main {
 }
 
 section {
-  text-align: center;
+    text-align: center;
 }
 
 section.leader {
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 section.leader .leader-img {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 section.leader h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 section.leader p {
-  font-size: .8rem;
-  color: var(--dark-gray);
-  font-weight: 300;
-  max-width: 76%;
-  margin: 0 auto;
+    font-size: 0.8rem;
+    color: var(--dark-gray);
+    font-weight: 300;
+    max-width: 76%;
+    margin: 0 auto;
 }
 
 section.our-creations {
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 section.our-creations h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 section.our-creations .creations {
-  display: grid;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .creations .creation {
-  position: relative;
+    position: relative;
 }
 
 .creations .creation .creation-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  font-weight: 300;
-  text-transform: uppercase;
-  max-width: 8rem;
-  text-align: left;
-  padding: 0 0 1rem 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    max-width: 8rem;
+    text-align: left;
+    padding: 0 0 1rem 1rem;
 }
 
 section.our-creations button.see-all {
-  background-color: transparent;
-  border: 2px solid var(--black);
-  color: var(--black);
-  padding: .5rem 0rem;
-  font-size: 1rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 0 auto;
-  display: block;
-  width: 10rem;
+    background-color: transparent;
+    border: 2px solid var(--black);
+    color: var(--black);
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+}
+
+footer {
+    background-color: var(--black);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer .footer-inner > img {
+    margin: 0 auto 2rem;
+}
+
+footer .footer-inner > nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .footer-inner > nav > ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer .footer-inner > nav > ul li a:hover {
+    color: var(--dark-gray);
+}
+
+footer .footer-inner .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+footer .footer-inner p.copyrigth {
+    color: var(--dark-gray);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
