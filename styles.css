@@ -213,12 +213,21 @@ section.our-creations .creations {
     margin-bottom: 3rem;
 }
 
+section.our-creations .creation:hover img{
+    opacity: 0.5;
+}
+
+section.our-creations .creation:hover .creation-text{
+    color: black;
+}
+
 .creations .creation {
     position: relative;
 }
 
 .creations .creation img {
     margin-inline: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 .creations .creation .creation-text {
@@ -252,7 +261,7 @@ footer {
     padding: 3rem 0;
 }
 
-footer .footer-inner img {
+footer .footer-inner .logo-links img {
     margin: 0 auto 2rem;
 }
 
@@ -267,10 +276,22 @@ footer .footer-inner nav ul li a {
     color: var(--white);
     font-size: 1rem;
     font-weight: 300;
+    transition: all 0.3s ease-in-out;
 }
 
-footer .footer-inner nav ul li a:hover {
-    color: var(--dark-gray);
+footer .footer-inner nav ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    margin-inline: auto;
+    margin-top: .3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .footer-inner nav ul li:hover::after {
+    width: 60%;
 }
 
 footer .footer-inner .socials {
@@ -279,6 +300,21 @@ footer .footer-inner .socials {
     align-items: center;
     margin-top: 3rem;
     gap: 1rem;
+}
+
+footer .footer-inner .socials a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    margin-inline: auto;
+    margin-top: .5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .footer-inner .socials a:hover::after {
+    width: 100%;
 }
 
 footer .footer-inner p.copyrigth {
@@ -310,6 +346,21 @@ footer .footer-inner p.copyrigth {
     header .inner nav.desktop-links ul {
         display: flex;
         gap: 2rem;
+    }
+
+    header .inner nav.desktop-links ul li::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: var(--white);
+        margin-inline: auto;
+        margin-top: .3rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header .inner nav.desktop-links ul li:hover::after {
+        width: 60%;
     }
 
     header .inner nav.desktop-links ul li a {
@@ -405,6 +456,10 @@ footer .footer-inner p.copyrigth {
         margin-bottom: 0;
     }
 
+    section.our-creations .creation .creation-text {
+        font-size: 1.2rem;
+    }
+
     section.our-creations .creations {
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
@@ -427,7 +482,7 @@ footer .footer-inner p.copyrigth {
         justify-content: space-between;
     }
 
-    footer .footer-inner img {
+    footer .footer-inner .logo-links img {
         margin: 0 0 2rem;
     }
 
@@ -438,6 +493,7 @@ footer .footer-inner p.copyrigth {
 
     footer .footer-inner .socials {
         margin-top: 0;
+        margin-bottom: 1.5rem;
         justify-content: flex-end;
     }
 
