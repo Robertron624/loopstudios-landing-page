@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repository](https://github.com/Robertron624/loopstudios-landing-page)
-- Live Site URL: [Netlify Live Site]([https://your-live-site-url.com](https://calm-pithivier-7b2729.netlify.app/))
+- Live Site URL: [Netlify Live Site](https://calm-pithivier-7b2729.netlify.app/)
 
 ## My process
 
